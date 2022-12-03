@@ -1,5 +1,5 @@
 import { useEffect, useRef, useReducer } from "react";
-import { INITIAL_STATE, AUDIO_OBJECTS, audioPlayerReducer } from "./audioPlayerReducer";
+import { INITIAL_STATE, AUDIO_OBJECTS, audioPlayerReducer } from "../reducers/audioPlayerReducer";
 
 function AudioPlayer() {
 	const [state, dispatch] = useReducer(audioPlayerReducer, INITIAL_STATE);

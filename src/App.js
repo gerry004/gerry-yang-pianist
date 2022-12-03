@@ -1,6 +1,6 @@
-import AudioPlayer from "./AudioPlayer";
-import Timeline from "./Timeline";
-import Navbar from "./Navbar";
+import AudioPlayer from "./components/AudioPlayer";
+import Timeline from "./components/Timeline";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
