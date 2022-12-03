@@ -6,8 +6,10 @@ body {
   overflow-x:hidden;
 }
 
-.piano-key {
-  @apply inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 
-  hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg 
-  transition duration-150 ease-in-out
+.white-piano-key {
+  @apply text-black bg-white font-medium h-20 border-black border-2 -z-10 col-start-1 col-span-4 text-right pr-3
+}
+
+.black-piano-key {
+  @apply text-white bg-black font-medium h-14 border-black border-2 -my-7 col-start-1 col-span-3
 }
