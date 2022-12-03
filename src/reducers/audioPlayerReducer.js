@@ -1,6 +1,6 @@
-import brahmsSonata from './assets/audio/brahms-sonata.mp3';
-import chopinRevolutionary from './assets/audio/chopin-revolutionary.mp3';
-import lisztRigoletto from './assets/audio/liszt-rigoletto.MOV.mp3';
+import brahmsSonata from '../assets/audio/brahms-sonata.mp3';
+import chopinRevolutionary from '../assets/audio/chopin-revolutionary.mp3';
+import lisztRigoletto from '../assets/audio/liszt-rigoletto.MOV.mp3';
 
 const INITIAL_STATE = {
 	isPlaying: false,
@@ -99,8 +99,14 @@ function audioPlayerReducer(state, action) {
 			}
 		case "SET_DURATION":
 			const totalDurationInSeconds = action.payload.current.duration;
-			const durationMinutes = Math.floor(totalDurationInSeconds / 60);
-			const durationSeconds = Math.round(totalDurationInSeconds - durationMinutes * 60);
+			let durationMinutes = Math.floor(totalDurationInSeconds / 60);
+			let durationSeconds = Math.round(totalDurationInSeconds - durationMinutes * 60);
+			if (durationMinutes < 10) {
+				durationMinutes = "0" + durationMinutes;
+			}
+			if (durationSeconds < 10) {
+				durationSeconds = "0" + durationSeconds;
+			}
 			return {
 				...state,
 				duration: durationMinutes + ":" + durationSeconds,
@@ -108,8 +114,14 @@ function audioPlayerReducer(state, action) {
 			}
 		case "SET_CURRENT_TIME":
 			const timeInSeconds = action.payload.current.currentTime;
-			const currentTimeMinutes = Math.floor(timeInSeconds / 60);
-			const currentTimeSeconds = Math.round(timeInSeconds - currentTimeMinutes * 60);
+			let currentTimeMinutes = Math.floor(timeInSeconds / 60);
+			let currentTimeSeconds = Math.round(timeInSeconds - currentTimeMinutes * 60);
+			if (currentTimeMinutes < 10) {
+				currentTimeMinutes = "0" + currentTimeMinutes;
+			}
+			if (currentTimeSeconds < 10) {
+				currentTimeSeconds = "0" + currentTimeSeconds;
+			}
 			return {
 				...state,
 				currentTime: currentTimeMinutes + ":" + currentTimeSeconds,

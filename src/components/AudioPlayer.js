@@ -29,7 +29,8 @@ function AudioPlayer() {
 	}, [state.currentAudio]);
 
 	const changeSlider = () => {
-		audio.currentTime = slider.value;
+		audio.current.currentTime = slider.current.value;
+		dispatch({type: "SET_CURRENT_TIME", payload: audio})
 	}
 
 	return (
