@@ -6,10 +6,47 @@ body {
   overflow-x:hidden;
 }
 
+h1 {
+  @apply font-sans text-8xl font-bold block my-3
+}
+
+h2 {
+  @apply font-sans text-4xl font-bold my-3
+}
+
+p {
+  @apply font-serif text-xl
+}
 .white-piano-key {
   @apply text-black bg-white font-medium h-20 border-black border-2 -z-10 col-start-1 col-span-4 text-right pr-3
 }
 
 .black-piano-key {
   @apply text-white bg-black font-medium h-14 border-black border-2 -my-7 col-start-1 col-span-3
+}
+
+.perspective-test {
+  perspective: 1000px;
+  box-shadow: 2px 10px 30px hsla(0%, 0%, 0%, 0,25);
+  transform: rotateX(4deg) rotateY(-10deg) rotateZ(1deg);
+  border-radius: 0.25em;
+  transition-duration: 1000ms;
+  transition-property: transform;
+}
+
+.perspective-test:hover {
+  transform: rotate(0);
+}
+
+.img-test {
+  perspective: 1000px;
+  box-shadow: 2px 10px 30px hsla(0%, 0%, 0%, 0,25);
+  border-radius: 0.25em;
+  transform: scale(0.75);
+  transition-duration: 1000ms;
+  transition-property: transform;
+}
+
+.img-scale-up {
+  transform: rotate(0) scale(1);
 }
