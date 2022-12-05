@@ -3,14 +3,24 @@ import Hero from "./components/Hero";
 import Timeline from "./components/Timeline";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { useRef } from "react";
 
 function App() {
+  const homeRef = useRef();
+  const timelineRef = useRef();
+  const contactRef = useRef();
   return (
     <div>
-      <Navbar />
-      <Hero />
-      <Timeline />
-      <Contact />
+      <Navbar homeRef={homeRef} timelineRef={timelineRef} contactRef={contactRef} />
+      <section ref={homeRef}>
+        <Hero />
+      </section>
+      <section ref={timelineRef}>
+        <Timeline />
+      </section>
+      <section ref={contactRef}>
+        <Contact />
+      </section>
       <Footer />
     </div>
   );
