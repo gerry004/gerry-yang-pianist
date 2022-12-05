@@ -5,8 +5,9 @@ import PianoSidebar from './PianoSidebar';
 function TimelineContent(props) {
 	return (
 		<div>
-			<h1 id={props.id}>{props.title}</h1>
+			<h2 id={props.id}>{props.title}</h2>
 			<p>{props.content}</p>
+			<img src={props.image} alt={props.title} className="max-w-xs"></img>
 		</div>
 	)
 }
@@ -28,8 +29,8 @@ function Timeline() {
 				}
 			})
 		}, []);
-		
-		const titles = document.querySelectorAll("h1");
+
+		const titles = document.querySelectorAll("h2");
 		titles.forEach((title) => {
 			observer.observe(title);
 		})
@@ -37,17 +38,22 @@ function Timeline() {
 
 	const timeline = TIMELINE_OBJECTS.map((object, index) => {
 		return (
-			<TimelineContent key={index} id={index + 1} title={object.title} content={object.content} />
+			<TimelineContent key={index} id={index + 1} title={object.title} content={object.content} image={object.photo} />
 		)
 	})
 
 	return (
-		<div className="flex flex-row m-20">
-			<PianoSidebar />
-			<div className="w-2/3 border-black border-2">
-				{timeline}
+		<section className="m-20">
+			<h1 className="text-center m-12">12 Years of Music Making</h1>
+			<div className="flex flex-row gap-4">
+				<div className="w-1/3">
+					<PianoSidebar />
+				</div>
+				<div className="w-2/3 border-black border-2 p-8">
+					{timeline}
+				</div>
 			</div>
-		</div>
+		</section>
 	)
 }
 

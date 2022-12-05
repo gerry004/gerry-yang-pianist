@@ -38,7 +38,7 @@ function AudioPlayer() {
 
 	return (
 		<div className="flex justify-center items-center">
-			<div className="gyp__audio-player-3d max-w-full border-black border-2 shadow-lg flex flex-col justify-center items-center p-4">
+			<div className="gyp__audio-player-3d max-w-full bg-white border-black border-2 shadow-lg flex flex-col justify-center items-center p-4">
 				<audio ref={audio} preload="metadata" src={state.currentAudio.audio}></audio>
 				<img ref={image} src={frankMaher} alt="Frank Maher Standing" className="gyp__image-3d max-w-xs m-3"></img>
 				<p className="text-center">{state.currentAudio.composer} - {state.currentAudio.title}</p>

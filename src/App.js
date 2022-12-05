@@ -1,17 +1,17 @@
-import AudioPlayer from "./components/AudioPlayer";
-import Timeline from "./components/Timeline";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Timeline from "./components/Timeline";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <section className="flex flex-row h-screen border-2 border-black justify-center gap-16">
-        <Hero />
-        <AudioPlayer />
-      </section>
+      <Hero />
       <Timeline />
+      <Contact />
+      <Footer />
     </div>
   );
 }

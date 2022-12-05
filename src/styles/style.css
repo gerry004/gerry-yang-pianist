@@ -4,6 +4,7 @@
 
 body {
   overflow-x:hidden;
+  margin: 0px;
 }
 
 h1 {
@@ -30,7 +31,7 @@ p {
   perspective: 1000px;
   box-shadow: 2px 10px 30px hsla(0%, 0%, 0%, 0,25);
   transform: rotateX(4deg) rotateY(-10deg) rotateZ(1deg);
-  border-radius: 0.25em;
+  border-radius: 2em;
   transition-duration: 1000ms;
   transition-property: transform;
 }

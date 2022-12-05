@@ -2,9 +2,9 @@ import TIMELINE_OBJECTS from "../content/timelineObjects";
 
 function PianoKey(props) {
 	return (
-			<button id={props.id} className={`gyp__piano-key-${props.colour}`}>
-					{props.content}
-			</button>
+		<button id={props.id} className={`gyp__piano-key-${props.colour}`}>
+			{props.content}
+		</button>
 	)
 }
 
@@ -17,6 +17,8 @@ function PianoSidebar() {
 			case 6:
 			case 8:
 			case 10:
+			case 12:
+			case 13:
 				return (
 					<PianoKey
 						key={index}
@@ -29,6 +31,7 @@ function PianoSidebar() {
 			case 4:
 			case 7:
 			case 9:
+			case 11:
 				return (
 					<PianoKey
 						key={index}
@@ -43,11 +46,9 @@ function PianoSidebar() {
 		}
 	})
 	return (
-		<div className="w-1/3">
-			<div className="grid grid-cols-4 sticky top-0">
+			<div className="grid grid-cols-4 sticky top-10">
 				{piano}
 			</div>
-		</div>
 	)
 }
 export default PianoSidebar;
