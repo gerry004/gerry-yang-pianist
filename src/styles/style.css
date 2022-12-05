@@ -17,15 +17,16 @@ h2 {
 p {
   @apply font-serif text-xl
 }
-.white-piano-key {
+
+.gyp__piano-key-white {
   @apply text-black bg-white font-medium h-20 border-black border-2 -z-10 col-start-1 col-span-4 text-right pr-3
 }
 
-.black-piano-key {
+.gyp__piano-key-black {
   @apply text-white bg-black font-medium h-14 border-black border-2 -my-7 col-start-1 col-span-3
 }
 
-.perspective-test {
+.gyp__audio-player-3d {
   perspective: 1000px;
   box-shadow: 2px 10px 30px hsla(0%, 0%, 0%, 0,25);
   transform: rotateX(4deg) rotateY(-10deg) rotateZ(1deg);
@@ -34,19 +35,19 @@ p {
   transition-property: transform;
 }
 
-.perspective-test:hover {
+.gyp__audio-player-3d:hover {
   transform: rotate(0);
 }
 
-.img-test {
-  perspective: 1000px;
-  box-shadow: 2px 10px 30px hsla(0%, 0%, 0%, 0,25);
+.gyp__image-3d {
+  perspective: 1500px;
+  box-shadow: 3px 12px 35px hsla(0%, 0%, 0%, 0,25);
   border-radius: 0.25em;
   transform: scale(0.75);
   transition-duration: 1000ms;
   transition-property: transform;
 }
 
-.img-scale-up {
+.gyp__image-scale-up {
   transform: rotate(0) scale(1);
 }

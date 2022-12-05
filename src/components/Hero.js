@@ -4,7 +4,6 @@ function Hero() {
             <h1>Hi there, I'm Gerry!</h1>
             <h2>Pianist, Piano Teacher.</h2>
             <p>DipLCM, LTCL</p>
-
         </div>
     )
 }

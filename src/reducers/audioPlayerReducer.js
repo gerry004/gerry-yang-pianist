@@ -1,14 +1,8 @@
-import brahmsSonata from '../assets/audio/brahms-sonata.mp3';
-import chopinRevolutionary from '../assets/audio/chopin-revolutionary.mp3';
-import lisztRigoletto from '../assets/audio/liszt-rigoletto.MOV.mp3';
+import AUDIO_OBJECTS from '../content/audioObjects';
 
 const INITIAL_STATE = {
 	isPlaying: false,
-	currentAudio: {
-		audio: brahmsSonata,
-		title: "Sonata No.1 First Movement",
-		composer: "Brahms"
-	},
+	currentAudio: AUDIO_OBJECTS[0],
 	currentIndex: 0,
 	disabledPrevious: true,
 	disabledNext: false,
@@ -18,33 +12,27 @@ const INITIAL_STATE = {
 	durationSeconds: 0
 }
 
-const AUDIO_OBJECTS = [
-	{
-		audio: brahmsSonata,
-		title: "Sonata No.1 First Movement",
-		composer: "Brahms"
-	},
-	{
-		audio: lisztRigoletto,
-		title: "Rigoletto Paraphrase",
-		composer: "Liszt"
-	},
-	{
-		audio: chopinRevolutionary,
-		title: "Etude Op.10 No.12 'Revolutionary'",
-		composer: "Chopin"
-	}];
+const ACTIONS = {
+	play: "PLAY",
+	pause: "PAUSE",
+	playNext: "PLAY_NEXT",
+	playPrevious: "PLAY_PREVIOUS",
+	setDuration: "SET_DURATION",
+	setCurrentTime: "SET_CURRENT_TIME"
+}
 
 function audioPlayerReducer(state, action) {
 	switch (action.type) {
 		case "PLAY":
-			action.payload.current.play();
+			action.payload.audio.current.play();
+			action.payload.image.current.classList.add("gyp__image-scale-up")
 			return {
 				...state,
 				isPlaying: true
 			}
 		case "PAUSE":
-			action.payload.current.pause();
+			action.payload.audio.current.pause();
+			action.payload.image.current.classList.remove("gyp__image-scale-up");
 			return {
 				...state,
 				isPlaying: false
@@ -132,4 +120,4 @@ function audioPlayerReducer(state, action) {
 	}
 
 }
-export { INITIAL_STATE, AUDIO_OBJECTS, audioPlayerReducer }
+export { INITIAL_STATE, ACTIONS, audioPlayerReducer }
