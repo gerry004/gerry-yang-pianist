@@ -1,18 +1,42 @@
 {
   "files": {
-    "main.css": "/gerry-yang-pianist/static/css/main.2f4d6924.css",
-    "main.js": "/gerry-yang-pianist/static/js/main.6706455d.js",
+    "main.css": "/gerry-yang-pianist/static/css/main.51463a07.css",
+    "main.js": "/gerry-yang-pianist/static/js/main.8313eb9f.js",
     "static/js/787.eb2bd660.chunk.js": "/gerry-yang-pianist/static/js/787.eb2bd660.chunk.js",
+    "static/media/tchaik-concerto-1.mp3": "/gerry-yang-pianist/static/media/tchaik-concerto-1.c45024c5c81565a1cc52.mp3",
+    "static/media/list-hungarian-rhapsody-2.mp3": "/gerry-yang-pianist/static/media/list-hungarian-rhapsody-2.a3770459e16ba568d04c.mp3",
     "static/media/brahms-sonata.mp3": "/gerry-yang-pianist/static/media/brahms-sonata.c08c816308d5e40f9778.mp3",
+    "static/media/mozart-concerto-8.MOV.mp3": "/gerry-yang-pianist/static/media/mozart-concerto-8.MOV.df72a038bdce4969877c.mp3",
+    "static/media/estonia-facing.jpg": "/gerry-yang-pianist/static/media/estonia-facing.69f57e6b7d2cd2901556.jpg",
     "static/media/liszt-rigoletto.MOV.mp3": "/gerry-yang-pianist/static/media/liszt-rigoletto.MOV.43abd6370b3592990a05.mp3",
+    "static/media/schumann-des-abends.mp3": "/gerry-yang-pianist/static/media/schumann-des-abends.2341e30fb28e78beaeab.mp3",
+    "static/media/schumann-aufschwung.mp3": "/gerry-yang-pianist/static/media/schumann-aufschwung.61570f7f9ea6da616050.mp3",
+    "static/media/feis-gala-1.jpg": "/gerry-yang-pianist/static/media/feis-gala-1.d8a7bce43ab78860eb6a.jpg",
+    "static/media/rach-moment-musicaux.mp3": "/gerry-yang-pianist/static/media/rach-moment-musicaux.5656ece57abde9a01738.mp3",
+    "static/media/frank-maher-group.JPG": "/gerry-yang-pianist/static/media/frank-maher-group.f0573bbb1a2870faeed9.JPG",
     "static/media/chopin-revolutionary.mp3": "/gerry-yang-pianist/static/media/chopin-revolutionary.55c9c84c6637c44519d2.mp3",
+    "static/media/chopin-etude-10-3.MOV.mp3": "/gerry-yang-pianist/static/media/chopin-etude-10-3.MOV.493be6c4e836d6bb2503.mp3",
+    "static/media/boyle-recital.JPG": "/gerry-yang-pianist/static/media/boyle-recital.ab4623dfc02e556a582c.JPG",
+    "static/media/grieg-homesickness.MOV.mp3": "/gerry-yang-pianist/static/media/grieg-homesickness.MOV.2d06f5c1c494beac4448.mp3",
+    "static/media/liszt-paganini-caprice-5.MOV.mp3": "/gerry-yang-pianist/static/media/liszt-paganini-caprice-5.MOV.9d644f22d1d41dd5aa45.mp3",
+    "static/media/first-win.JPG": "/gerry-yang-pianist/static/media/first-win.06ad027dc3c0e05c8222.JPG",
+    "static/media/nyoi-bowtie.jpg": "/gerry-yang-pianist/static/media/nyoi-bowtie.87a624657958bfa0415a.jpg",
+    "static/media/piano-day-one.jpg": "/gerry-yang-pianist/static/media/piano-day-one.c7bbdfb508308238d65b.jpg",
+    "static/media/yuja-wang.jpg": "/gerry-yang-pianist/static/media/yuja-wang.085c21eec96a8faaac76.jpg",
+    "static/media/carnegie-hall-solo.png": "/gerry-yang-pianist/static/media/carnegie-hall-solo.d3abec57bd435980dcce.png",
+    "static/media/christopher-elton.jpg": "/gerry-yang-pianist/static/media/christopher-elton.dccf6a6c69d92ee3ee5d.jpg",
+    "static/media/feis-biggs-cup.jpg": "/gerry-yang-pianist/static/media/feis-biggs-cup.cc6159638e731a1bc074.jpg",
+    "static/media/late-late-toy-show.jpg": "/gerry-yang-pianist/static/media/late-late-toy-show.6c3b4a960f9ebd925188.jpg",
+    "static/media/TUD-Awards.jpg": "/gerry-yang-pianist/static/media/TUD-Awards.1f949b8f14a38ce42de9.jpg",
+    "static/media/frank-maher-standing.jpg": "/gerry-yang-pianist/static/media/frank-maher-standing.05f592ba745cebce0eaf.jpg",
+    "static/media/frank-maher-headshot.png": "/gerry-yang-pianist/static/media/frank-maher-headshot.de5cab2af179fe01d8aa.png",
     "index.html": "/gerry-yang-pianist/index.html",
-    "main.2f4d6924.css.map": "/gerry-yang-pianist/static/css/main.2f4d6924.css.map",
-    "main.6706455d.js.map": "/gerry-yang-pianist/static/js/main.6706455d.js.map",
+    "main.51463a07.css.map": "/gerry-yang-pianist/static/css/main.51463a07.css.map",
+    "main.8313eb9f.js.map": "/gerry-yang-pianist/static/js/main.8313eb9f.js.map",
     "787.eb2bd660.chunk.js.map": "/gerry-yang-pianist/static/js/787.eb2bd660.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f4d6924.css",
-    "static/js/main.6706455d.js"
+    "static/css/main.51463a07.css",
+    "static/js/main.8313eb9f.js"
   ]
 }
