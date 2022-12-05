@@ -1,4 +1,4 @@
-import frankMaherHeadshot from "../assets/photos/frank-maher-headshot.jpg";
+import frankMaherHeadshot from "../assets/photos/frank-maher-headshot.png";
 function Navbar() {
     return (
         <nav className="flex flex-row h-16 px-6 py-2">
