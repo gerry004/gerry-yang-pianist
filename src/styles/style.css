@@ -62,14 +62,41 @@ p {
 
 .gyp__audio-player-3d {
   box-shadow: 0px 0px 40px 6px rgba(0, 0, 0, 0.5);
-  transform: rotateX(4deg) rotateY(-10deg) rotateZ(1deg);
   border-radius: 2em;
+  animation-name: twirl;
+  animation-duration: 1s;
+  animation-timing-function: linear;
   transition-duration: 1000ms;
   transition-property: transform;
 }
 
+.gyp__audio-player-rotations {
+  transform: rotateX(2deg) rotateY(-8deg) rotateZ(2deg);
+}
+
 .gyp__audio-player-3d:hover {
   transform: rotate(0);
+}
+
+@keyframes twirl {
+  0% {   
+    transform: rotateX(-4deg) rotateY(180deg) rotateZ(-4deg);
+  }
+  20% {
+    transform: rotateX(-2deg) rotateY(144deg) rotateZ(-2deg);
+  }
+  40% {
+    transform: rotateX(0deg) rotateY(108deg) rotateZ(0deg);
+  }
+  60% {
+    transform: rotateX(0deg) rotateY(72deg) rotateZ(0deg);
+  }
+  80% {
+    transform: rotateX(2deg) rotateY(36deg) rotateZ(2deg);
+  }
+  100% {
+    transform: rotateX(2deg) rotateY(-8deg) rotateZ(2deg);
+  }
 }
 
 .gyp__image-3d {
