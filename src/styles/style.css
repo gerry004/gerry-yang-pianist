@@ -5,6 +5,7 @@
 body {
   overflow-x:hidden;
   margin: 0px;
+  scroll-snap-type: y mandatory;
 }
 
 h1 {
@@ -27,9 +28,40 @@ p {
   @apply text-white bg-black font-medium h-14 border-black border-2 -my-7 col-start-1 col-span-3
 }
 
-.gyp__audio-player-3d {
+
+.gyp__scroll-snap-child {
+  scroll-snap-align: start;
+}
+
+.perspective-1000 {
   perspective: 1000px;
-  box-shadow: 2px 10px 30px hsla(0%, 0%, 0%, 0,25);
+}
+
+.gyp__range-slider {
+  -webkit-appearance: none; 
+  outline: none;
+  height: 5px; 
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  @apply bg-gray-300 rounded-full hover:bg-gray-400
+}
+
+.gyp__range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  outline: none;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  @apply bg-gray-400 rounded-full
+}
+
+.gyp__range-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.4);
+  @apply bg-gray-500
+}
+
+.gyp__audio-player-3d {
+  box-shadow: 0px 0px 40px 6px rgba(0, 0, 0, 0.5);
   transform: rotateX(4deg) rotateY(-10deg) rotateZ(1deg);
   border-radius: 2em;
   transition-duration: 1000ms;
@@ -42,7 +74,7 @@ p {
 
 .gyp__image-3d {
   perspective: 1500px;
-  box-shadow: 3px 12px 35px hsla(0%, 0%, 0%, 0,25);
+  box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.5);
   border-radius: 0.25em;
   transform: scale(0.75);
   transition-duration: 1000ms;
@@ -50,5 +82,6 @@ p {
 }
 
 .gyp__image-scale-up {
+  box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.25);
   transform: rotate(0) scale(1);
 }

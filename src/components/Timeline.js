@@ -1,11 +1,11 @@
-import { useEffect } from 'react';
 import TIMELINE_OBJECTS from '../content/timelineObjects';
 import PianoSidebar from './PianoSidebar';
+import useIntersectionObserver from '../custom hooks/useIntersectionObserver';
 
 function TimelineContent(props) {
 	return (
-		<div>
-			<h2 id={props.id}>{props.title}</h2>
+		<div id={props.id} className="gyp__scroll-snap-child h-screen">
+			<h2>{props.title}</h2>
 			<p>{props.content}</p>
 			<img src={props.image} alt={props.title} className="max-w-xs"></img>
 		</div>
@@ -13,28 +13,18 @@ function TimelineContent(props) {
 }
 
 function Timeline() {
-
-	useEffect(() => {
-		const observer = new IntersectionObserver((entries) => {
-			entries.forEach((entry) => {
-				if (entry.isIntersecting) {
-					const buttonId = "piano-key-" + entry.target.id;
-					const buttonElement = document.getElementById(buttonId);
-					buttonElement?.classList.add("text-4xl");
-				}
-				if (!entry.isIntersecting) {
-					const buttonId = "piano-key-" + entry.target.id;
-					const buttonElement = document.getElementById(buttonId);
-					buttonElement?.classList.remove("text-4xl");
-				}
-			})
-		}, []);
-
-		const titles = document.querySelectorAll("h2");
-		titles.forEach((title) => {
-			observer.observe(title);
-		})
-	}, [])
+	const scaleUp = (entry) => {
+		const buttonId = "piano-key-" + entry.target.id;
+		const buttonElement = document.getElementById(buttonId);
+		buttonElement?.classList.add("text-4xl");
+	}
+	const scaleDown = (entry) => {
+		const buttonId = "piano-key-" + entry.target.id;
+		const buttonElement = document.getElementById(buttonId);
+		buttonElement?.classList.remove("text-4xl");
+	}
+	
+	useIntersectionObserver(".gyp__scroll-snap-child", scaleUp, scaleDown);
 
 	const timeline = TIMELINE_OBJECTS.map((object, index) => {
 		return (
@@ -49,7 +39,7 @@ function Timeline() {
 				<div className="w-1/3">
 					<PianoSidebar />
 				</div>
-				<div className="w-2/3 border-black border-2 p-8">
+				<div className="gyp__scroll-snap-parent w-2/3 border-black border-2 p-8">
 					{timeline}
 				</div>
 			</div>

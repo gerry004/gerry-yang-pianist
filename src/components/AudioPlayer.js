@@ -37,15 +37,16 @@ function AudioPlayer() {
 	}
 
 	return (
-		<div className="flex justify-center items-center">
-			<div className="gyp__audio-player-3d max-w-full bg-white border-black border-2 shadow-lg flex flex-col justify-center items-center p-4">
+		<div className="flex justify-center items-center perspective-1000">
+			<div className="gyp__audio-player-3d max-w-full bg-white border-zinc-800 border-8 shadow-lg flex flex-col justify-center items-center p-4">
+				<span className="bg-black text-white font-bold text-center h-1/6 w-1/2 block -mt-4 mb-2 rounded-br-lg rounded-bl-lg">ooo</span>
 				<audio ref={audio} preload="metadata" src={state.currentAudio.audio}></audio>
 				<img ref={image} src={frankMaher} alt="Frank Maher Standing" className="gyp__image-3d max-w-xs m-3"></img>
 				<p className="text-center">{state.currentAudio.composer} - {state.currentAudio.title}</p>
-				<input ref={slider} type="range" min="0" max={state.durationSeconds} value={state.currentSeconds} onChange={changeSlider} className="w-1/2"></input>
-				<div className="flex flex-row w-1/2">
-					<p className="justify-start">{state.currentTime}</p>
-					<p className="ml-auto">{state.duration}</p>
+				<input ref={slider} type="range" min="0" max={state.durationSeconds} value={state.currentSeconds} onChange={changeSlider} className="gyp__range-slider w-2/3 mt-2"></input>
+				<div className="flex flex-row w-2/3">
+					<span className="justify-start">{state.currentTime}</span>
+					<span className="ml-auto">{state.duration}</span>
 				</div>
 				<div className="flex flex-row">
 					<svg onClick={() => { dispatch({ type: ACTIONS.playPrevious, payload: audio, audioObjects: AUDIO_OBJECTS }) }} className={`w-12 h-12 fill-none hover:fill-slate-300 ${state.disabledPrevious ? "text-gray-600" : "text-black"}`} mlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
