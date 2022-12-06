@@ -28,6 +28,9 @@ p {
   @apply text-white bg-black font-medium h-14 border-black border-2 -my-7 col-start-1 col-span-3
 }
 
+.gyp__piano-key-pressed {
+  @apply bg-yellow-100
+}
 
 .gyp__scroll-snap-child {
   scroll-snap-align: start;
@@ -81,6 +84,7 @@ p {
 @keyframes twirl {
   0% {   
     transform: rotateX(-4deg) rotateY(180deg) rotateZ(-4deg);
+    opacity: 0;
   }
   20% {
     transform: rotateX(-2deg) rotateY(144deg) rotateZ(-2deg);
@@ -96,6 +100,7 @@ p {
   }
   100% {
     transform: rotateX(2deg) rotateY(-8deg) rotateZ(2deg);
+    opacity: 1;
   }
 }
 
@@ -109,6 +114,20 @@ p {
 }
 
 .gyp__image-scale-up {
-  box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 18px 12px rgba(0, 0, 0, 0.25);
   transform: rotate(0) scale(1);
+}
+
+
+.gyp__timeline-content-initial {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+
+.gyp__timeline-content-intersect {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }

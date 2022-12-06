@@ -4,7 +4,7 @@ import useIntersectionObserver from '../custom hooks/useIntersectionObserver';
 
 function TimelineContent(props) {
 	return (
-		<div id={props.id} className="gyp__scroll-snap-child h-screen">
+		<div id={props.id} className="gyp__timeline-content-initial h-screen">
 			<h2>{props.title}</h2>
 			<p>{props.content}</p>
 			<img src={props.image} alt={props.title} className="max-w-xs"></img>
@@ -16,15 +16,17 @@ function Timeline() {
 	const scaleUp = (entry) => {
 		const buttonId = "piano-key-" + entry.target.id;
 		const buttonElement = document.getElementById(buttonId);
-		buttonElement?.classList.add("text-4xl");
+		buttonElement?.classList.add("gyp__piano-key-pressed");
+		entry.target.classList.add("gyp__timeline-content-intersect");
 	}
 	const scaleDown = (entry) => {
 		const buttonId = "piano-key-" + entry.target.id;
 		const buttonElement = document.getElementById(buttonId);
-		buttonElement?.classList.remove("text-4xl");
+		buttonElement?.classList.remove("gyp__piano-key-pressed");
+		// entry.target.classList.remove("gyp__timeline-content-intersect");
 	}
 	
-	useIntersectionObserver(".gyp__scroll-snap-child", scaleUp, scaleDown);
+	useIntersectionObserver(".gyp__timeline-content-initial", scaleUp, scaleDown);
 
 	const timeline = TIMELINE_OBJECTS.map((object, index) => {
 		return (
