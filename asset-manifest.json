@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/gerry-yang-pianist/static/css/main.40318a21.css",
-    "main.js": "/gerry-yang-pianist/static/js/main.ab17b278.js",
+    "main.css": "/gerry-yang-pianist/static/css/main.3a9b6fde.css",
+    "main.js": "/gerry-yang-pianist/static/js/main.74716816.js",
     "static/js/787.eb2bd660.chunk.js": "/gerry-yang-pianist/static/js/787.eb2bd660.chunk.js",
     "static/media/tchaik-concerto-1.mp3": "/gerry-yang-pianist/static/media/tchaik-concerto-1.c45024c5c81565a1cc52.mp3",
     "static/media/list-hungarian-rhapsody-2.mp3": "/gerry-yang-pianist/static/media/list-hungarian-rhapsody-2.a3770459e16ba568d04c.mp3",
@@ -26,17 +26,18 @@
     "static/media/carnegie-hall-solo.png": "/gerry-yang-pianist/static/media/carnegie-hall-solo.d3abec57bd435980dcce.png",
     "static/media/christopher-elton.jpg": "/gerry-yang-pianist/static/media/christopher-elton.dccf6a6c69d92ee3ee5d.jpg",
     "static/media/feis-biggs-cup.jpg": "/gerry-yang-pianist/static/media/feis-biggs-cup.cc6159638e731a1bc074.jpg",
+    "static/media/belfast-epta.jpg": "/gerry-yang-pianist/static/media/belfast-epta.4171b6b576f755419af9.jpg",
     "static/media/late-late-toy-show.jpg": "/gerry-yang-pianist/static/media/late-late-toy-show.6c3b4a960f9ebd925188.jpg",
     "static/media/TUD-Awards.jpg": "/gerry-yang-pianist/static/media/TUD-Awards.1f949b8f14a38ce42de9.jpg",
     "static/media/frank-maher-standing.jpg": "/gerry-yang-pianist/static/media/frank-maher-standing.05f592ba745cebce0eaf.jpg",
     "static/media/frank-maher-headshot.png": "/gerry-yang-pianist/static/media/frank-maher-headshot.de5cab2af179fe01d8aa.png",
     "index.html": "/gerry-yang-pianist/index.html",
-    "main.40318a21.css.map": "/gerry-yang-pianist/static/css/main.40318a21.css.map",
-    "main.ab17b278.js.map": "/gerry-yang-pianist/static/js/main.ab17b278.js.map",
+    "main.3a9b6fde.css.map": "/gerry-yang-pianist/static/css/main.3a9b6fde.css.map",
+    "main.74716816.js.map": "/gerry-yang-pianist/static/js/main.74716816.js.map",
     "787.eb2bd660.chunk.js.map": "/gerry-yang-pianist/static/js/787.eb2bd660.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40318a21.css",
-    "static/js/main.ab17b278.js"
+    "static/css/main.3a9b6fde.css",
+    "static/js/main.74716816.js"
   ]
 }
