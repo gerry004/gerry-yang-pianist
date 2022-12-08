@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* scale calculation: 1 + (ztransform * -1) / persepctive*/
 body {
   overflow-x:hidden;
   margin: 0px;
@@ -20,20 +20,56 @@ p {
   @apply font-serif text-xl
 }
 
+.gyp__piano-sidebar-3d {
+  perspective: 600px;
+}
+
 .gyp__piano-key-white {
-  @apply text-black bg-white font-medium h-20 border-black border-2 -z-10 col-start-1 col-span-4 text-right pr-3
+  transform: rotateY(-1deg);
+  box-shadow: 6px 0px 0px 0px rgba(0, 0, 0, 0.15);
+  transition-property: transform box-shadow;
+  transition-duration: 400ms;
+  transition-type: ease-in;
+  @apply text-black bg-white font-medium h-20 border-black border-2 
+  -z-10 col-start-1 col-span-4 text-right pr-3 rounded-r-xl
 }
 
 .gyp__piano-key-black {
-  @apply text-white bg-black font-medium h-14 border-black border-2 -my-7 col-start-1 col-span-3
+  transform: rotateY(-1deg);
+  box-shadow: 4px 0px 0px 1px rgba(0, 0, 0, 0.85);
+  transition-property: transform box-shadow;
+  transition-duration: 300ms;
+  transition-type: ease-in;
+  @apply text-white bg-black font-medium h-14 border-black border-2 
+  -my-7 col-start-1 col-span-3 rounded-r-xl
+}
+
+.gyp__piano-key-white:hover, .gyp__piano-key-black:hover {
+  transform: rotateY(0deg);
+  box-shadow: 8px 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
 .gyp__piano-key-pressed {
-  @apply bg-yellow-100
+  transform: rotateY(0deg);
+  box-shadow: 8px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.gyp__scroll-snap-parent {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  max-height: 100vh;
 }
 
 .gyp__scroll-snap-child {
   scroll-snap-align: start;
+}
+
+.gyp__scroll-snap-parent::-webkit-scrollbar {
+  background: transparent;
+}
+
+.perspective-100 {
+  perspective: 100px;
 }
 
 .perspective-1000 {

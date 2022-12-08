@@ -14,16 +14,15 @@ function TimelineContent(props) {
 
 function Timeline() {
 	const scaleUp = (entry) => {
+		entry.target.classList.add("gyp__timeline-content-intersect");
 		const buttonId = "piano-key-" + entry.target.id;
 		const buttonElement = document.getElementById(buttonId);
 		buttonElement?.classList.add("gyp__piano-key-pressed");
-		entry.target.classList.add("gyp__timeline-content-intersect");
 	}
 	const scaleDown = (entry) => {
 		const buttonId = "piano-key-" + entry.target.id;
 		const buttonElement = document.getElementById(buttonId);
 		buttonElement?.classList.remove("gyp__piano-key-pressed");
-		// entry.target.classList.remove("gyp__timeline-content-intersect");
 	}
 	
 	useIntersectionObserver(".gyp__timeline-content-initial", scaleUp, scaleDown);
@@ -41,7 +40,7 @@ function Timeline() {
 				<div className="w-1/3">
 					<PianoSidebar />
 				</div>
-				<div className="gyp__scroll-snap-parent w-2/3 border-black border-2 p-8">
+				<div className="w-2/3 border-black border-2 p-8">
 					{timeline}
 				</div>
 			</div>

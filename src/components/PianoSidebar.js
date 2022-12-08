@@ -1,9 +1,18 @@
 import TIMELINE_OBJECTS from "../content/timelineObjects";
 
 function PianoKey(props) {
+	const {id, contentId, colour, content} = props;
+
+	const goTo = () => {
+		window.scrollTo({
+			top: document.getElementById(contentId).offsetTop - document.querySelector("nav").offsetHeight,
+			behavior: "smooth"
+		})
+	}
+
 	return (
-		<button id={props.id} className={`gyp__piano-key-${props.colour}`}>
-			{props.content}
+		<button id={id} onClick={goTo} className={`gyp__piano-key-${colour}`}>
+			{content}
 		</button>
 	)
 }
@@ -23,6 +32,7 @@ function PianoSidebar() {
 					<PianoKey
 						key={index}
 						id={`piano-key-${index + 1}`}
+						contentId = {index+1}
 						colour="white"
 						content={object.pianoKeyContent}
 					></PianoKey>
@@ -36,6 +46,7 @@ function PianoSidebar() {
 					<PianoKey
 						key={index}
 						id={`piano-key-${index + 1}`}
+						contentId = {index+1}
 						colour="black"
 						content={object.pianoKeyContent}
 					></PianoKey>
@@ -46,7 +57,7 @@ function PianoSidebar() {
 		}
 	})
 	return (
-			<div className="grid grid-cols-4 sticky top-10">
+			<div className="gyp__piano-sidebar-3d grid grid-cols-4 sticky top-10">
 				{piano}
 			</div>
 	)
