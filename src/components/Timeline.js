@@ -8,6 +8,7 @@ function TimelineContent(props) {
 			<img src={props.image} alt={props.title} className="min-w-full rounded-t-lg"></img>
 			<div className="px-8 pb-6">
 			<h2>{props.title}</h2>
+			<span>{props.date}</span>
 			<p>{props.content}</p>
 			</div>
 		</div>
@@ -31,7 +32,7 @@ function Timeline() {
 
 	const timeline = TIMELINE_OBJECTS.map((object, index) => {
 		return (
-			<TimelineContent key={index} id={index + 1} title={object.title} content={object.content} image={object.image} />
+			<TimelineContent key={index} id={index + 1} title={object.title} content={object.content} image={object.image} date={object.date}/>
 		)
 	})
 
