@@ -4,10 +4,12 @@ import useIntersectionObserver from '../custom hooks/useIntersectionObserver';
 
 function TimelineContent(props) {
 	return (
-		<div id={props.id} className="gyp__timeline-content-initial h-screen bg-yellow-100 rounded-lg border-black border-2 p-8 mb-4">
+		<div id={props.id} className="gyp__timeline-content-initial bg-yellow-100 rounded-lg border-black border-2 mb-4 max-w-[60%] ml-10">
+			<img src={props.image} alt={props.title} className="min-w-full rounded-t-lg"></img>
+			<div className="px-8 pb-6">
 			<h2>{props.title}</h2>
 			<p>{props.content}</p>
-			<img src={props.image} alt={props.title} className="max-w-xs"></img>
+			</div>
 		</div>
 	)
 }
@@ -29,7 +31,7 @@ function Timeline() {
 
 	const timeline = TIMELINE_OBJECTS.map((object, index) => {
 		return (
-			<TimelineContent key={index} id={index + 1} title={object.title} content={object.content} image={object.photo} />
+			<TimelineContent key={index} id={index + 1} title={object.title} content={object.content} image={object.image} />
 		)
 	})
 
@@ -38,10 +40,10 @@ function Timeline() {
 			<h1 className="text-center m-12">12 Years of Music Making</h1>
 			<h2 className="text-center m-12">Lorem Ipsum Dolor Subtitle text!</h2>
 			<div className="flex flex-row gap-4">
-				<div className="w-1/3">
+				<div className="w-[40%]">
 					<PianoSidebar />
 				</div>
-				<div className="w-2/3">
+				<div className="w-[60%]">
 					{timeline}
 				</div>
 			</div>

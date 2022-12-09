@@ -1,7 +1,7 @@
 import { useEffect, useRef, useReducer } from "react";
 import { INITIAL_STATE, ACTIONS, audioPlayerReducer } from "../reducers/audioPlayerReducer";
 import AUDIO_OBJECTS from "../content/audioObjects";
-import frankMaher from "../assets/photos/frank-maher-standing.jpg";
+import frankMaher from "../assets/images/frank-maher-standing.jpg";
 
 function AudioPlayer() {
 	const [state, dispatch] = useReducer(audioPlayerReducer, INITIAL_STATE);

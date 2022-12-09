@@ -1,4 +1,4 @@
-import frankMaherHeadshot from "../assets/photos/frank-maher-headshot.png";
+import frankMaherHeadshot from "../assets/images/frank-maher-headshot.png";
 import {useRef} from "react";
 
 function Navbar(props) {
