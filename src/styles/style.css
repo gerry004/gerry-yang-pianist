@@ -9,15 +9,19 @@ body {
 }
 
 h1 {
-  @apply font-sans text-8xl font-bold block my-3
+  @apply font-sans text-6xl md:text-8xl font-bold block md:my-3
 }
 
 h2 {
-  @apply font-sans text-4xl font-bold my-3
+  @apply font-sans text-3xl sm:text-4xl font-bold md:my-3
 }
 
 p {
-  @apply font-serif text-xl
+  @apply font-serif text-lg sm:text-xl
+}
+
+span {
+  @apply text-xs sm:text-base
 }
 
 .gyp__piano-sidebar-3d {

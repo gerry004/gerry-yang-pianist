@@ -12,16 +12,16 @@ function App() {
   return (
     <div>
       <Navbar homeRef={homeRef} timelineRef={timelineRef} contactRef={contactRef} />
-      <section ref={homeRef}>
+      <section ref={homeRef} className="mt-[64px] py-10 px-6 bg-yellow-100">
         <Hero />
       </section>
-      <section ref={timelineRef}>
+      {/* <section ref={timelineRef}>
         <Timeline />
       </section>
       <section ref={contactRef}>
         <Contact />
       </section>
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

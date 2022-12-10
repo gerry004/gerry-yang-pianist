@@ -4,12 +4,12 @@ import useIntersectionObserver from '../custom hooks/useIntersectionObserver';
 
 function TimelineContent(props) {
 	return (
-		<div id={props.id} className="gyp__timeline-content-initial bg-yellow-100 rounded-lg border-black border-2 mb-4 max-w-[60%] ml-10">
+		<div id={props.id} className="gyp__timeline-content-initial bg-yellow-100 rounded-lg border-black border-2 mb-4 md:max-w-[60%] md:ml-10">
 			<img src={props.image} alt={props.title} className="min-w-full rounded-t-lg"></img>
-			<div className="px-8 pb-6">
-			<h2>{props.title}</h2>
-			<span>{props.date}</span>
-			<p>{props.content}</p>
+			<div className="px-8 pb-6 text-center">
+				<h2>{props.title}</h2>
+				<span>{props.date}</span>
+				<p>{props.content}</p>
 			</div>
 		</div>
 	)
@@ -27,24 +27,24 @@ function Timeline() {
 		const buttonElement = document.getElementById(buttonId);
 		buttonElement?.classList.remove("gyp__piano-key-pressed");
 	}
-	
+
 	useIntersectionObserver(".gyp__timeline-content-initial", scaleUp, scaleDown);
 
 	const timeline = TIMELINE_OBJECTS.map((object, index) => {
 		return (
-			<TimelineContent key={index} id={index + 1} title={object.title} content={object.content} image={object.image} date={object.date}/>
+			<TimelineContent key={index} id={index + 1} title={object.title} content={object.content} image={object.image} date={object.date} />
 		)
 	})
 
 	return (
-		<section className="m-20">
+		<section className="max-w-screen md:m-20">
 			<h1 className="text-center m-12">12 Years of Music Making</h1>
 			<h2 className="text-center m-12">Lorem Ipsum Dolor Subtitle text!</h2>
-			<div className="flex flex-row gap-4">
-				<div className="w-[40%]">
+			<div className="md:flex flex-row gap-4">
+				<div className="md:w-[40%]">
 					<PianoSidebar />
 				</div>
-				<div className="w-[60%]">
+				<div className="md:w-[60%]">
 					{timeline}
 				</div>
 			</div>
