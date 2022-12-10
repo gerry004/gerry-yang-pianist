@@ -17,11 +17,11 @@ function App() {
       </section>
       {/* <section ref={timelineRef}>
         <Timeline />
-      </section>
+      </section> */}
       <section ref={contactRef}>
         <Contact />
       </section>
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }

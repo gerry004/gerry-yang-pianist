@@ -9,11 +9,11 @@ body {
 }
 
 h1 {
-  @apply font-sans text-6xl md:text-8xl font-bold block md:my-3
+  @apply font-sans text-5xl sm:text-6xl md:text-8xl font-bold block md:my-3
 }
 
 h2 {
-  @apply font-sans text-3xl sm:text-4xl font-bold md:my-3
+  @apply font-sans text-2xl sm:text-3xl md:text-4xl font-bold md:my-3
 }
 
 p {
