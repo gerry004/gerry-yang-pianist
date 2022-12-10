@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/gerry-yang-pianist/static/css/main.f6a9124e.css",
-    "main.js": "/gerry-yang-pianist/static/js/main.a8f2248d.js",
+    "main.css": "/gerry-yang-pianist/static/css/main.495db555.css",
+    "main.js": "/gerry-yang-pianist/static/js/main.d0a10077.js",
     "static/js/787.eb2bd660.chunk.js": "/gerry-yang-pianist/static/js/787.eb2bd660.chunk.js",
     "static/media/tchaik-concerto-1.mp3": "/gerry-yang-pianist/static/media/tchaik-concerto-1.c45024c5c81565a1cc52.mp3",
     "static/media/list-hungarian-rhapsody-2.mp3": "/gerry-yang-pianist/static/media/list-hungarian-rhapsody-2.a3770459e16ba568d04c.mp3",
@@ -32,12 +32,12 @@
     "static/media/frank-maher-standing.jpg": "/gerry-yang-pianist/static/media/frank-maher-standing.05f592ba745cebce0eaf.jpg",
     "static/media/frank-maher-headshot.png": "/gerry-yang-pianist/static/media/frank-maher-headshot.de5cab2af179fe01d8aa.png",
     "index.html": "/gerry-yang-pianist/index.html",
-    "main.f6a9124e.css.map": "/gerry-yang-pianist/static/css/main.f6a9124e.css.map",
-    "main.a8f2248d.js.map": "/gerry-yang-pianist/static/js/main.a8f2248d.js.map",
+    "main.495db555.css.map": "/gerry-yang-pianist/static/css/main.495db555.css.map",
+    "main.d0a10077.js.map": "/gerry-yang-pianist/static/js/main.d0a10077.js.map",
     "787.eb2bd660.chunk.js.map": "/gerry-yang-pianist/static/js/787.eb2bd660.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6a9124e.css",
-    "static/js/main.a8f2248d.js"
+    "static/css/main.495db555.css",
+    "static/js/main.d0a10077.js"
   ]
 }
