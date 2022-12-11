@@ -8,7 +8,7 @@ function useIntersectionObserver(observedClass, onEnter, onLeave) {
 				if (entry.isIntersecting) onEnter(entry);
 				if (!entry.isIntersecting) onLeave(entry);
 			})
-		}, {threshold: 0.25});
+		}, {threshold: 0.1});
 
 		const titles = document.querySelectorAll(observedClass);
 		titles.forEach((title) => {
