@@ -44,7 +44,7 @@ function Timeline() {
 				<div className="sm:w-[40%]">
 					<PianoSidebar />
 				</div>
-				<div className="sm:w-[60%]">
+				<div className="sm:w-[60%] perspective-1000">
 					{timeline}
 				</div>
 			</div>
