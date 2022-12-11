@@ -4,8 +4,11 @@ function PianoKey(props) {
 	const { id, contentId, colour, content } = props;
 
 	const goTo = () => {
+		const element = document.getElementById(contentId);
+		const elementOffset = element.getBoundingClientRect();
+		const navbarHeight = 64;
 		window.scrollTo({
-			top: document.getElementById(contentId).offsetTop - document.querySelector("nav").offsetHeight,
+			top: elementOffset.top + window.scrollY - navbarHeight,
 			behavior: "smooth"
 		})
 	}
@@ -19,7 +22,7 @@ function PianoKey(props) {
 
 function PianoSidebar() {
 	const piano = TIMELINE_OBJECTS.map((object, index) => {
-		switch (index + 1) {
+		switch (index+1) {
 			case 2:
 			case 4:
 			case 7:
@@ -31,8 +34,8 @@ function PianoSidebar() {
 				return (
 					<PianoKey
 						key={index}
-						id={`piano-key-${index + 1}`}
-						contentId={index + 1}
+						id={`piano-key-${index+1}`}
+						contentId={index+1}
 						colour="black"
 						content={object.pianoKeyContent}
 					></PianoKey>
