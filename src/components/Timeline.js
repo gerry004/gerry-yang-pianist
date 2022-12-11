@@ -37,9 +37,9 @@ function Timeline() {
 	})
 
 	return (
-		<section className="max-w-screen py-8 px-3 md:m-20">
+		<section className="max-w-screen py-8 px-3 md:m-16">
 			<h1 className="text-center">12 Years of Music Making</h1>
-			<h2 className="text-center my-3">Here are some of the things I'm proud of!</h2>
+			<h2 className="text-center mt-3 mb-8 sm:mb-10 md:mb-14">Here are some of the things I'm proud of!</h2>
 			<div className="sm:flex flex-row justify-evenly gap-8">
 				<div className="sm:w-[40%]">
 					<PianoSidebar />
