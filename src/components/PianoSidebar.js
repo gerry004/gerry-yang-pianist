@@ -51,7 +51,7 @@ function PianoSidebar() {
 		}
 	})
 	return (
-		<div className="hidden gyp__piano-sidebar-3d sm:grid grid-cols-4 sticky top-20">
+		<div className="hidden gyp__piano-sidebar-3d sm:grid grid-cols-4 sm:sticky sm:top-20">
 			{piano}
 		</div>
 	)
