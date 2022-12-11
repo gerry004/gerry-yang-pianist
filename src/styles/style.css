@@ -5,7 +5,6 @@
 body {
   overflow-x:hidden;
   margin: 0px;
-  scroll-snap-type: y mandatory;
 }
 
 h1 {
