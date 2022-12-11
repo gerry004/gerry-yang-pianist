@@ -9,6 +9,7 @@ body, html {
 
 #root {
   overflow-x:hidden;
+  position: relative;
 }
 
 h1 {
