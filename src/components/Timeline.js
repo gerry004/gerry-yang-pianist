@@ -4,9 +4,9 @@ import useIntersectionObserver from '../custom hooks/useIntersectionObserver';
 
 function TimelineContent(props) {
 	return (
-		<div id={props.id} className="gyp__timeline-content-initial bg-yellow-100 rounded-lg border-black border-2 mb-4 md:max-w-[60%] md:ml-10">
+		<div id={props.id} className="gyp__timeline-content-initial bg-yellow-100 rounded-lg border-black border-2 mb-4">
 			<img src={props.image} alt={props.title} className="min-w-full rounded-t-lg"></img>
-			<div className="px-8 pb-6 text-center">
+			<div className="px-8 py-6">
 				<h2>{props.title}</h2>
 				<span>{props.date}</span>
 				<p>{props.content}</p>
@@ -37,14 +37,14 @@ function Timeline() {
 	})
 
 	return (
-		<section className="max-w-screen md:m-20">
-			<h1 className="text-center m-12">12 Years of Music Making</h1>
-			<h2 className="text-center m-12">Lorem Ipsum Dolor Subtitle text!</h2>
-			<div className="md:flex flex-row gap-4">
-				<div className="md:w-[40%]">
+		<section className="max-w-screen py-8 px-3 md:m-20">
+			<h1 className="text-center">12 Years of Music Making</h1>
+			<h2 className="text-center my-3">Here are some of the things I'm proud of!</h2>
+			<div className="sm:flex flex-row justify-evenly gap-8">
+				<div className="sm:w-[40%]">
 					<PianoSidebar />
 				</div>
-				<div className="md:w-[60%]">
+				<div className="sm:w-[60%]">
 					{timeline}
 				</div>
 			</div>

@@ -15,9 +15,9 @@ function App() {
       <section ref={homeRef} className="mt-[64px] py-10 px-6 bg-yellow-100">
         <Hero />
       </section>
-      {/* <section ref={timelineRef}>
+      <section ref={timelineRef}>
         <Timeline />
-      </section> */}
+      </section>
       <section ref={contactRef}>
         <Contact />
       </section>
