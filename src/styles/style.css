@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 /* scale calculation: 1 + (ztransform * -1) / persepctive*/
-body {
+body, html {
   overflow-x:hidden;
   margin: 0px;
+}
+
+#root {
+  overflow-x:hidden;
 }
 
 h1 {
