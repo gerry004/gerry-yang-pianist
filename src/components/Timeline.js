@@ -3,9 +3,10 @@ import PianoSidebar from './PianoSidebar';
 import useIntersectionObserver from '../custom hooks/useIntersectionObserver';
 
 function TimelineContent(props) {
+	const image = props.image ? <img src={props.image} alt={props.title} className="min-w-full rounded-t-lg"></img> : "";
 	return (
 		<div id={props.id} className="gyp__timeline-content-initial bg-yellow-100 rounded-lg border-black border-2 mb-4">
-			<img src={props.image} alt={props.title} className="min-w-full rounded-t-lg"></img>
+			{image}
 			<div className="px-8 py-6">
 				<h2>{props.title}</h2>
 				<span>{props.date}</span>
@@ -39,7 +40,7 @@ function Timeline() {
 	return (
 		<section className="max-w-screen py-8 px-3 md:m-16">
 			<h1 className="text-center">12 Years of Music Making</h1>
-			<h2 className="text-center mt-3 mb-8 sm:mb-10 md:mb-14">Here are some of the things I'm proud of!</h2>
+			<h2 className="text-center mt-3 mb-8 mx-4 sm:mb-10 md:mb-14">Here are some of the highlights, achievements, and successes that I'm proud of!</h2>
 			<div className="sm:flex flex-row justify-evenly gap-8">
 				<div className="sm:w-[40%]">
 					<PianoSidebar />
