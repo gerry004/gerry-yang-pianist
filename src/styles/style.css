@@ -161,7 +161,6 @@ span {
 .gyp__timeline-content-initial {
   opacity: 0;
   filter: blur(5px);
-  /* transform: translateZ(-25px); */
   transition: all 1s;
   box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -169,5 +168,4 @@ span {
 .gyp__timeline-content-intersect {
   opacity: 1;
   filter: blur(0);
-  /* transform: translateZ(0); */
 }

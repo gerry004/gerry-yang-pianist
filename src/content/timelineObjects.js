@@ -97,73 +97,81 @@ const TIMELINE_OBJECTS = [
         title: "European Piano Teacher's Association",
         pianoKeyContent: "EPTA",
         date: "March 2018, March 2019",
-        content: "I came first for two consecutive years, in the first year and second year competitions, " +
-            "playing the Lark by Glinka, and Liszt Rigoletto respectively.",
+        content: "This is a competition where students in the same year in secondary school compete against each other. " +
+            "I came first for two consecutive years, playing The Lark by Glink in the 1st year competition " +
+            "and Rigoletto Paraphrase by Liszt in the 2nd year comeptition. ",
         image: epta
     },
     {
         title: "First Feis Ceoil Win",
         pianoKeyContent: "First Feis Ceoil Win",
         date: "March 2019",
-        content: "Feis Ceoil is Ireland's national music festival. I had come Very Highly Commended (the equivalent of 3rd or 4th) at Feis Ceoil a number of times before this, but I still hadn't taken home any silevrware. " +
-            "Claude Biggs Memorial Cup was my first ever Feis Win for my baroque playing of Back and Scarlatti. " +
-            "As well as this I placed 2nd in Junior Concerto, placing over someone I had never been able to beat before.",
+        content: "Feis Ceoil is Ireland's largest music competition and this was my first time winning in it. " +
+            "I won the Claude Biggs Memorial Cup for Baroque playing. " + 
+            "I played Allemande from French Suite No.6 by Bach and Sonata in D minor by Scarlatti. " +
+            "As well as that I placed 2nd in the Junior Concerto comeptition, playing the first movement of Piano Concerto No.3 in C minor by Beethoven.",
         image: feisBiggs
     },
     {
         title: "National Youth Orchestra of Ireland",
         pianoKeyContent: "National Youth Orchestra of Ireland",
         date: "Winter 2018, Summer 2019, Winter 2019",
-        content: "I was invited to play with the NYOI. Up until now I had mainly done solo stuff. With the occasional piano duets. " +
-            "This was my first ever experience playing with a large group of other musicians. " +
-            "It was fantastic meeting other talented musicians my age. And learned to count properly as well. " +
-            "Most notable parts were in Shostakovich Symphony No.1 and Danzon No.2. So many amazing memories made here.",
+        content: "I played piano, organ, and celesta for the National Youth Orchestra of Ireland, " + 
+            "performing most notably Symphony No.1 by Shostakovich, Enigma Variations by Elgar, and Danzon No.2 by Marquez. " +
+            "This was an incredible experience, making friends and making music with other talented musicians my age. " +
+            "I made so many amazing memories here!",
         image: nyoi
     },
     {
         title: "Meeting Yuja Wang!",
         pianoKeyContent: "Yuja Wang",
         date: "September 2019",
-        content: "I got to meet Yuja Wang! I was so starstruck when I met her backstage that I didn't know what to say. " +
-            "After hearing her play the incredible 3rd Piano Concerto by Rachmaninoff.",
+        content: "After hearing Yuja Wang perform the incredible Piano Concerto No.3 by Rachmaninoff, I got to meet her backstage! " +
+            "I was so shocked I had no idea what to say, I had never met a famous person before!",
         image: yujaWang
     },
     {
         title: "TUDublin Conservatory of Music and Drama Awards",
         pianoKeyContent: "TUD Awards",
-        content: "Received awards for scoring highest in the Conservatory Exams. 97/100 in Grade 8, 100/100 in Advanced Level Two.",
+        content: "I received awards from the TUDublin Conservatory for scoring the highest marks in the Conservatory's Grade Exams. " +
+            "I achieved an impressive 97/100 in Grade 8 and 100/100 in Advanced Level Two. " + 
+            "As well as that, in my diploma exams, I scored 97/100 in the DipLCM and 91/100 in the LTCL.",
         image: tudAwards
     },
     {
         title: "Tignes MusicAlp Festival",
         pianoKeyContent: "Tignes MusicAlp Festival",
         date: "August 2019",
-        content: "Studied under Christopher Elton. An incredible music festival that was located in the middle of the Alps. " +
-            "I met fascinating musicians from all over the world that were taking music seriosuly as a career.",
+        content: "I spent 4 weeks studying with Christopher Elton at an incredible music festival 'MusicAlp' located in Tignes, in the middle of the Alps " +
+            "As well as learning from world class teachers, I met fascinating professional musicians from all over the world. " +
+            "This experience helped me decide whether I wanted to take on music as a career.",
         image: christopherElton
     },
     {
         title: "Feis Ceoil Gala Prizewinners Concert",
         pianoKeyContent: "Feis Ceoil Gala",
         date: "September 2019",
-        content: "Performed Liszt Rigolette Paraphrase in the John Field Room of the National Concert Hall for winning the Biggs Memorial Cup.",
+        content: "I performed Liszt Rigoletto Paraphrase at the Feis Ceoil Prizewinner's Concert in the John Field Room of the National Concert Hall " +
+            "for winning the Claude Biggs Memorial Cup that year.",
         image: feisGala
     },
     {
         title: "Frank Maher Finalist",
         pianoKeyContent: "Frank Maher Finalist",
         date: "October 2021",
-        content: "This a competition for a bursary of 5,000 euros. All the finalists received 300 euros each. I was lucky enough to be one of the finalists.",
+        content: "Frank Maher Musical Awards is a competition open to 6th year students with a grand prize of 5,000 euros. " +
+            "With over 40 applicants around Ireland, I was one of six finalists chosen to perform at the Mill Theatre. " +
+            "I performed the first movement of Beethoven's Piano Sonata No.11 in B flat major and Etude Op.10 No.3 'Tristesse' by Chopin.",
         image: frankMaher
     },
     {
         title: "Aras an Uachtarain",
         pianoKeyContent: "Aras an Uachtarain",
         date: "September 2022",
-        content: "I played for the President Michael D. Higgins at the Aras an Uachtarain, setting the atmosphere with a collection of Chopin Nocturnes, Waltzes, for culture night.",
+        content: "I played for President Michael D. Higgins at the Aras an Uachtarain, " +
+            "setting the atmosphere at the drinks reception with a collection of Chopin Nocturnes and Waltzes.",
         image: arasAnUachtarain
-    },
-// potentially add, zoom recital
+    }
 ]
 
 export default TIMELINE_OBJECTS;
