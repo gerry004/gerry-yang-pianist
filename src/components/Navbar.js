@@ -1,4 +1,3 @@
-import frankMaherHeadshot from "../assets/images/frank-maher-headshot.png";
 import {useRef} from "react";
 
 function Navbar(props) {
@@ -13,7 +12,6 @@ function Navbar(props) {
     }
     return (
         <nav ref={navbar} id="navbar" className="flex flex-row justify-center h-16 px-6 py-2 fixed top-0 right-0 left-0 bg-white z-50">
-            <img onClick={() => goTo(homeRef)} src={frankMaherHeadshot} alt="Gerry Yang" className="rounded-full"></img>
             <button onClick={() => goTo(homeRef)} className="hidden md:block ml-2 text-xl font-bold">Gerry Yang</button>
             <div className="flex flex-row w-full justify-evenly md:w-1/3 md:ml-auto">
                 <button className="font-bold text-gray-600 hover:text-black" onClick={() => goTo(timelineRef)}>My Journey</button>
